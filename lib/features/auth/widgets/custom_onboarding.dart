@@ -43,7 +43,7 @@ class CustomOnboarding extends StatelessWidget {
                   ),
                   SizedBox(width: w * 0.03),
                   Text(
-                    "Smart Pocket",
+                    "Monex",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: w * 0.06,
