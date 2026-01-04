@@ -39,8 +39,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
               SizedBox(height: 5),
               Padding(
-                padding: EdgeInsets.only(left: w * 0.25),
-                  child : Text("Smart Pocket",style: TextStyle(
+                padding: EdgeInsets.only(left: w * 0.39),
+                  child : Text( "Monex",style: TextStyle(
                   fontWeight: FontWeight.bold,fontSize: 30
                       ),
                     ),
