@@ -27,32 +27,35 @@ class _ResetScreenState extends State<ResetScreen> {
           ),
         ),
       body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(height: 30),
-            Padding(
-              padding: EdgeInsets.only(left: w * 0.05),
-              child:  Text("Create Your New\nPassword",style: TextStyle(fontSize: 38),),
-             ),
-            SizedBox(height: 10),
-            Padding(
-              padding: EdgeInsets.only(left: w * 0.05),
-              child:  Text("Your new password must be different \nfrom previous password.",
-                style: TextStyle(
-                    fontSize: 18, color: Color(0xff9BA1A8)),
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(height: 30),
+              Padding(
+                padding: EdgeInsets.only(left: w * 0.05),
+                child:  Text("Create Your New\nPassword",style: TextStyle(fontSize: 38),),
+               ),
+              SizedBox(height: 10),
+              Padding(
+                padding: EdgeInsets.only(left: w * 0.05),
+                child:  Text("Your new password must be different \nfrom previous password.",
+                  style: TextStyle(
+                      fontSize: 18, color: Color(0xff9BA1A8)),
+                ),
               ),
-            ),
-            SizedBox(height: 35),
-            CustomTextfield(hintText:'Old Password',prefixSvg: "assets/lock.svg",isPassword: true),
-            CustomTextfield(hintText:'New Password',prefixSvg: "assets/lock.svg",isPassword: true),
-            SizedBox(height: 30),
-            CustomButton(text: "RESET PASSWORD", onTap: (){
-              Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => const BackScreen()),
-            );})
-          ],
+              SizedBox(height: 35),
+              CustomTextfield(hintText:'Old Password',prefixSvg: "assets/lock.svg",isPassword: true),
+              CustomTextfield(hintText:'New Password',prefixSvg: "assets/lock.svg",isPassword: true),
+              SizedBox(height: 30),
+              CustomButton(text: "RESET PASSWORD", onTap: (){
+                Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const BackScreen()),
+              );})
+            ],
+          ),
         ),
       ),
     );
